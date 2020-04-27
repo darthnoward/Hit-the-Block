@@ -71,7 +71,6 @@ class MainGame(Widget):
 
 		self.button.text = "START"
 		self.button.background_color = (0.1, 1, 0, 0.9)
-		self.paddle.center_x = self.center_x
 		
 	def start(self):
 		self.paddle.center_x = self.center_x
@@ -158,7 +157,7 @@ class Rect(Widget):
 			Rectangle(pos=self.pos, size=self.size)
 
 	def bounce_ball(self, ball):
-		if self.collide_widget(ball) and self.bounce == 0:
+		if self.collide_widget(ball):
 			self.bounce += 1
 			
 			vx, vy = ball.velocity

@@ -5,6 +5,7 @@ It serves as the final assignment of 10.009 Digital World.
 
 ![appearance](./assets/screenshot.jpg)
 
+[Link to demo video](https://www.youtube.com/watch?v=TcWWvUSAIoo)
 ## Dependency
 
 - Python
@@ -42,7 +43,7 @@ python3 main.py
 > The class which the app is instantiated. 
 
 - loads kivy language with kivy Builder, which describes initial user interface and interactions.
-- set the root widget to be updated 65 times per second to achieve stable 60hz refresh rate.
+- set the root widget to be updated 64 times per second to achieve stable 60hz refresh rate.
 - return the root widget.
 
 ### class MainGame
